@@ -16,7 +16,7 @@
 
   example
   
-```start C:\"Program Files"\2018.2.15f1\Editor\Unity.exe -batchmode -projectPath D:\Documents\Work\RenderFarmTest -executeMethod myNameSpace.myClass.myMethod```
+```start C:\"Program Files"\2018.2.15f1\Editor\Unity.exe -projectPath D:\Documents\Work\RenderFarmTest -executeMethod myNameSpace.myClass.myMethod```
 
 **Static script example:**
 
