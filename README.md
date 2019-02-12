@@ -12,13 +12,47 @@
 
 *To add command line arguments:*
 - Open Parametrs tab
-- Press the button 'Add parametrs' (can also choose already built in parameters)
+- Press the button 'Add parametrs' (can also choose already built in parameters and it will skip next 2 steps)
 - write ID, select Group, write diplay name and help text
 - Select Type: Switch and Press OK
 - Then Select created parametr and press the button 'Create Switch' 
-- write command line argument in Switch field and press OK
- 
+- write command line argument in Switch field (can edit parametrs field if necessary) and press OK
 
+ 
+**Static class to handle command line arguments**
+```
+using UnityEngine;
+using UnityEditor;
+using System;
+using UnityEditor.SceneManagement;
+
+namespace RenderFarm
+{
+    class StaticClass
+    {
+
+        public static void record()
+        {
+            string[] parameters;
+            string scenePath;
+
+            parameters = Environment.GetCommandLineArgs();
+
+            for (int i = 0; i < parameters.Length; i++)
+            {
+                if (parameters[i] == "-scene") // serch for command line argument(self-defined at the switch field)
+                {
+                    scenePath = parameters[i + 1];
+
+                    EditorSceneManager.OpenScene(scenePath);
+                }
+
+            }
+            UnityEditor.EditorApplication.isPlaying = true;
+        }
+    }
+}
+```
 
 
 
