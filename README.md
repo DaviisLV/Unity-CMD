@@ -1,3 +1,30 @@
+# RenderPal v2 Update
+
+**Submitter conf**
+
+```Job settings -> Net job -> Scene -> (Need to select scene)```
+
+```Render settings -> Files and directories -> Project dir -> (Need to select project dir)```
+
+```Render settings -> Additional render settingss -> General -> (can enable command line arguments)```
+
+**Renderer management**
+
+*To add command line arguments:*
+- Open Parametrs tab
+- Press the button 'Add parametrs' (can also choose already built in parameters)
+- write ID, select Group, write diplay name and help text
+- Select Type: Switch and Press OK
+- Then Select created parametr and press the button 'Create Switch' 
+- write command line argument in Switch field and press OK
+ 
+
+
+
+
+
+
+
 # Unity-CMD
 
 **To start Unity project from CMD:**
