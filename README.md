@@ -12,16 +12,21 @@ Optional
 
 **Renderer management**
 
-*To add command line arguments:*
+*To add command line parameters (parameters that the user is supposed to change):*
 - Open Parametrs tab
 - Press the button 'Add parametrs' (can also choose already built in parameters and it will skip next 2 steps)
-- write ID, select Group, write diplay name and help text
+- Write ID, select Group, write diplay name and help text
 - Select Type: Switch and Press OK
 - Then Select created parametr and press the button 'Create Switch' 
-- write command line argument in Switch field (can edit parametrs field if necessary) and press OK
+- Write command line parametrs in Switch field (can edit parametrs field if necessary) and press OK
+
+*To add command line parameters (parameters that the user cannot change):*
+- Open Command line tab
+- Press the button 'Add switch'
+- Write command line parametrs in Switch field and parametrs field and press OK
 
  
-**Static class to handle command line arguments**
+**Static class to handle cmd parametrs**
 ```
 using UnityEngine;
 using UnityEditor;
