@@ -2,9 +2,11 @@
 
 **Submitter conf**
 
-```Job settings -> Net job -> Scene -> (Need to select scene)```
+```Job settings -> Net job -> Scene -> (Need to select scene which will be rendered)```
 
 ```Render settings -> Files and directories -> Project dir -> (Need to select project dir)```
+
+Optional
 
 ```Render settings -> Additional render settingss -> General -> (can enable command line arguments)```
 
